@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDC25B48-3C2A-4563-ABAF-1D390D55F5FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PASSIS.LIB</RootNamespace>
+    <AssemblyName>PASSIS.LIB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Utils.Zip">
+      <HintPath>..\..\PASSIS.DAO\PASSIS.DAO\bin\Debug\Ionic.Utils.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\PASSIS.DAO\PASSIS.DAO\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\PASSIS.DAO\PASSIS.DAO\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Reportviewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\TELNET-SP\Desktop\Microsoft.Reportviewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Reportviewer.Webforms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\TELNET-SP\Desktop\Microsoft.Reportviewer.Webforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Net.SourceForge.Koogra">
+      <HintPath>..\..\PASSIS.DAO\PASSIS.DAO\bin\Debug\Net.SourceForge.Koogra.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\PASSIS.DAO\PASSIS.DAO\bin\Debug\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Extended">
+      <HintPath>..\..\PASSIS.DAO\PASSIS.DAO\bin\Debug\NLog.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademicSessionLIB.cs" />
+    <Compile Include="AcademicTermLIB.cs" />
+    <Compile Include="AdmissionLIB.cs" />
+    <Compile Include="AssignmentLIB.cs" />
+    <Compile Include="AttendanceLIB.cs" />
+    <Compile Include="CampusLIB.cs" />
+    <Compile Include="ClassGradeLIB.cs" />
+    <Compile Include="CustomClasses\AdmittedStudent.cs" />
+    <Compile Include="CustomClasses\FeeTemp.cs" />
+    <Compile Include="CustomClasses\GradeMovement.cs" />
+    <Compile Include="CustomClasses\gtpayQueryStringProperties.cs" />
+    <Compile Include="CustomClasses\LogonUser.cs" />
+    <Compile Include="CustomClasses\parent.cs" />
+    <Compile Include="CustomClasses\ResultProperties.cs" />
+    <Compile Include="CustomClasses\ResultSummaryStatistics.cs" />
+    <Compile Include="CustomClasses\Role.cs" />
+    <Compile Include="CustomClasses\sms.cs" />
+    <Compile Include="CustomClasses\StudentOptionSelected.cs" />
+    <Compile Include="CustomClasses\SubjectTeachers.cs" />
+    <Compile Include="DocumentTypeLIB.cs" />
+    <Compile Include="ErrorLogLIB.cs" />
+    <Compile Include="FeeLIB.cs" />
+    <Compile Include="GroupingLIB.cs" />
+    <Compile Include="HomeRoomLIB.cs" />
+    <Compile Include="LedgerAccountLIB.cs" />
+    <Compile Include="LessonNoteLIB.cs" />
+    <Compile Include="PAConfig.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentStudentMapLIB.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PASSISLIB.cs">
+      <DependentUpon>PASSISLIB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="PASSISLIB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PASSISLIB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="PendingEmailLIB.cs" />
+    <Compile Include="PeriodLIB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceCenterLIB.cs" />
+    <Compile Include="RoleLIB.cs" />
+    <Compile Include="SchoolConfigLIB.cs" />
+    <Compile Include="SchoolLIB.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScoresheetLIB.cs" />
+    <Compile Include="SubjectTeachersLIB.cs" />
+    <Compile Include="TeacherLIB.cs" />
+    <Compile Include="TransactionsLogLIB.cs" />
+    <Compile Include="UsersLIB.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\ConfigHelper.cs" />
+    <Compile Include="Utility\Enum.cs" />
+    <Compile Include="Utility\UserSessionData.cs" />
+    <Compile Include="Utility\Utili.cs" />
+    <Compile Include="Utility\XmlParser.cs" />
+    <Compile Include="YearBillLIB.cs" />
+    <Compile Include="YearFeeLIB.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PASSISLIB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>PASSISLIB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PASSISLIB.dbml.layout">
+      <DependentUpon>PASSISLIB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

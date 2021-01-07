@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PASSIS.LIB", ".", "{CF5A50AA-45A4-4EF8-A6AC-7A3C652E06CC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/PASSIS.LIB"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Passis Semis Main\Passis_New\PASSIS.LIB\PASSIS.LIB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PASSIS.LIB\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PASSIS.LIB"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\Passis Semis Main\Passis_New\PASSIS.LIB\PASSIS.LIB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PASSIS.LIB\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "45869"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF5A50AA-45A4-4EF8-A6AC-7A3C652E06CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5A50AA-45A4-4EF8-A6AC-7A3C652E06CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
